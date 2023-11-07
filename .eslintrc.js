@@ -29,5 +29,6 @@ module.exports = {
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "@typescript-eslint/consistent-indexed-object-style": "off",
+    "@typescript-eslint/consistent-type-imports": "off",
   },
 };

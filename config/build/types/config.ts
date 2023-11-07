@@ -1,4 +1,4 @@
-export type BuildMode = "development" | "production";
+export type BuildMode = 'development' | 'production';
 
 // IBuildEnv
 export interface BuildEnv {
