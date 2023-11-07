@@ -1,9 +1,7 @@
 .app.dark {
-  --bg-color: #00004b;
-  --inverted-bg-color: #424242;
+  --bg-color: rgb(88, 88, 88);
+  --inverted-bg-color: rgb(44, 44, 44);
 
   --primary-color: #ffffff;
-  --secondary-color: #c7c7c7;
-  --inverted-primary-color: #0040ff;
-  --inverted-secondary-color: #6395ff;
+  --link-color: rgb(89, 133, 255);
 }

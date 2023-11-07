@@ -10,10 +10,10 @@ const Navbar = ({ className }: NavbarProps) => {
   return (
     <div className={classNames(styles.Navbar, {}, [className])}>
       <div className={styles.links}>
-        <AppLink theme={AppLinkTheme.SECONDARY} className={styles.mainLink} to="/">
+        <AppLink theme={AppLinkTheme.LINK} className={styles.mainLink} to="/">
           Main
         </AppLink>
-        <AppLink theme={AppLinkTheme.SECONDARY} to="/about">
+        <AppLink theme={AppLinkTheme.LINK} to="/about">
           AboutPage
         </AppLink>
       </div>

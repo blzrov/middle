@@ -5,8 +5,7 @@ import styles from "./AppLink.module.scss";
 import { classNames } from "shared/lib/classNames/classNames";
 
 export enum AppLinkTheme {
-  PRIMARY = "primary",
-  SECONDARY = "secondary",
+  LINK = "link",
 }
 
 interface AppLinkProps extends LinkProps {
@@ -15,7 +14,7 @@ interface AppLinkProps extends LinkProps {
 }
 
 const AppLink: FC<AppLinkProps> = (props) => {
-  const { className, children, to, theme = AppLinkTheme.PRIMARY, ...otherProps } = props;
+  const { className, children, to, theme = AppLinkTheme.LINK, ...otherProps } = props;
 
   return (
     <Link className={classNames(styles.AppLink, {}, [className, styles[theme]])} to={to} {...otherProps}>
