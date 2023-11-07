@@ -1,10 +1,10 @@
-import Button from "shared/ui/Button/Button";
-import styles from "./ThemeSwitcher.module.scss";
-import { classNames } from "shared/lib/classNames/classNames";
-import { useTheme } from "app/providers/ThemeProvider";
-import LightIcon from "shared/assets/icons/theme-light.svg";
-import DarkIcon from "shared/assets/icons/theme-dark.svg";
-import { Theme } from "app/providers/ThemeProvider/lib/ThemeContext";
+import Button from 'shared/ui/Button/Button';
+import styles from './ThemeSwitcher.module.scss';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { useTheme } from 'app/providers/ThemeProvider';
+import LightIcon from 'shared/assets/icons/theme-light.svg';
+import DarkIcon from 'shared/assets/icons/theme-dark.svg';
+import { Theme } from 'app/providers/ThemeProvider/lib/ThemeContext';
 
 interface ThemeSwitcherProps {
   className?: string;

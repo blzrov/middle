@@ -1,10 +1,10 @@
-import { FC } from "react";
+import { type FC } from 'react';
 
-import styles from "./Button.module.scss";
-import { classNames } from "shared/lib/classNames/classNames";
+import styles from './Button.module.scss';
+import { classNames } from 'shared/lib/classNames/classNames';
 
 export enum ButtonTheme {
-  CLEAR = "clear",
+  CLEAR = 'clear',
 }
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
