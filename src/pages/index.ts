@@ -1,4 +1,6 @@
-import AboutPage from "./AboutPage/AboutPage";
-import MainPage from "./MainPage/MainPage";
+import { lazy } from "react";
 
-export { AboutPage, MainPage };
+const MainPage = lazy(() => import("./MainPage/MainPage"));
+const AboutPage = lazy(() => import("./AboutPage/AboutPage"));
+
+export { MainPage, AboutPage };
