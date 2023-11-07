@@ -30,5 +30,7 @@ module.exports = {
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "@typescript-eslint/consistent-indexed-object-style": "off",
     "@typescript-eslint/consistent-type-imports": "off",
+    "n/handle-callback-err": "warn",
+    semi: [2, "always"],
   },
 };

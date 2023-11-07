@@ -1,6 +1,10 @@
 .Button {
-  padding: 5px 10px;
   cursor: pointer;
+}
+
+.primary {
+  padding: 2px 4px;
+  color: var(--primary-color);
 }
 
 .clear {
