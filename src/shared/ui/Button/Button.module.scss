@@ -3,12 +3,20 @@
 }
 
 .primary {
-  padding: 2px 4px;
   color: var(--primary-color);
+  background-color: inherit;
 }
 
 .clear {
   border: none;
   background-color: inherit;
   color: var(--primary-color);
+}
+
+.M {
+  padding: 2px 4px;
+}
+
+.L {
+  padding: 4px 8px;
 }

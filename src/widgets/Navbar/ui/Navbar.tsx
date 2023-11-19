@@ -13,9 +13,6 @@ const Navbar = ({ className }: NavbarProps) => {
         <AppLink theme={AppLinkTheme.LINK} className={styles.mainLink} to="/">
           Main
         </AppLink>
-        <AppLink theme={AppLinkTheme.LINK} to="/about">
-          AboutPage
-        </AppLink>
       </div>
     </div>
   );

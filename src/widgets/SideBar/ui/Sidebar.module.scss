@@ -17,3 +17,23 @@
   justify-content: center;
   width: 100%;
 }
+
+.collapseBtn {
+  position: absolute;
+  right: 0px;
+  bottom: 100px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-l);
+
+  .menu_item {
+    margin: 2px 4px;
+    padding: 2px 4px;
+  }
+  .menu_item:hover {
+    // color: aqua;
+  }
+}
