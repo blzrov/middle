@@ -10,7 +10,7 @@ interface ModalProps {
   onClose?: () => void
 }
 
-const Button: FC<ModalProps> = (props) => {
+const Modal: FC<ModalProps> = (props) => {
   const { className, children, isOpen, onClose, ...otherProps } = props;
   if (!isOpen) return <></>;
 
@@ -23,4 +23,4 @@ const Button: FC<ModalProps> = (props) => {
   );
 };
 
-export default Button;
+export default Modal;
