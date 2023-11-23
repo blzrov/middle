@@ -32,6 +32,7 @@ module.exports = {
     "@typescript-eslint/consistent-type-imports": "off",
     "n/handle-callback-err": "warn",
     "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
     semi: [2, "always"],
   },
   globals: {
