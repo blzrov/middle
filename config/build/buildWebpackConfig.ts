@@ -22,6 +22,6 @@ export function buildWebpackConfig (options: BuildOptions): webpack.Configuratio
       path: options.paths.build,
       clean: true
     },
-    plugins: buildPlugins(options.paths.html)
+    plugins: buildPlugins(options.paths.html, options.isDev)
   };
 }

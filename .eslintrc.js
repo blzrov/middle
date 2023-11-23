@@ -31,6 +31,10 @@ module.exports = {
     "@typescript-eslint/consistent-indexed-object-style": "off",
     "@typescript-eslint/consistent-type-imports": "off",
     "n/handle-callback-err": "warn",
+    "@typescript-eslint/naming-convention": "off",
     semi: [2, "always"],
+  },
+  globals: {
+    __IS_DEV__: true,
   },
 };
