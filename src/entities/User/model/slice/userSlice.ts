@@ -12,14 +12,16 @@ export const userSlice = createSlice({
       state.authData = action.payload;
     },
     initLoginData: (state) => {
-      const user = localStorage.getItem(USER_LOCALSORAGE_LOGIN);
+      let user = localStorage.getItem(USER_LOCALSORAGE_LOGIN);
+      if (!user) localStorage.setItem(USER_LOCALSORAGE_LOGIN, JSON.stringify(null));
+      user = localStorage.getItem(USER_LOCALSORAGE_LOGIN);
       if (user) {
         state.authData = JSON.parse(user);
       }
     },
     logout: (state) => {
-      localStorage.setItem(USER_LOCALSORAGE_LOGIN, undefined);
-      state.authData = undefined;
+      localStorage.setItem(USER_LOCALSORAGE_LOGIN, JSON.stringify(null));
+      state.authData = null;
     }
   }
 });

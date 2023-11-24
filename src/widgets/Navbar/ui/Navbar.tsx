@@ -18,21 +18,21 @@ const Navbar = ({ className }: NavbarProps) => {
   return (
     <div className={classNames(styles.Navbar, {}, [className])}>
       <div className={styles.links}>
-        {authData?.id
-          ? (
+       {authData !== undefined && <> {authData?.id
+         ? (
           <div>
             <div>{authData.username}</div>
             <AppLink onClick={() => dispatch(userActions.logout())} theme={AppLinkTheme.LINK} className={styles.mainLink} to="/">
               Выйти
             </AppLink>
           </div>
-            )
-          : (
+           )
+         : (
           <AppLink onClick={() => setIsAuthModal(true)} theme={AppLinkTheme.LINK} className={styles.mainLink} to="/">
             Войти
           </AppLink>
-            )}
-        <Suspense fallback={<div>Загрузка...</div>}>
+           )}</>}
+        <Suspense fallback={<></>}>
           {isAuthModal && <LoginModal isOpen={isAuthModal} onClose={() => setIsAuthModal(false)} />}
         </Suspense>
       </div>
