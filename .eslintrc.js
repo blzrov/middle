@@ -36,6 +36,8 @@ module.exports = {
     "@typescript-eslint/no-dynamic-delete": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/prefer-ts-expect-error": "off",
+    "@typescript-eslint/await-thenable": "off",
+    "@typescript-eslint/no-floating-promises": "off",
     semi: [2, "always"],
   },
   globals: {

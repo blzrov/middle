@@ -1,4 +1,4 @@
-import { useDispatch, useSelector, useStore } from 'react-redux';
+import { useSelector, useStore } from 'react-redux';
 import styles from './LoginForm.module.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
 import Button from 'shared/ui/Button/Button';
@@ -8,6 +8,7 @@ import { loginActions, loginReducer } from '../model/slice/loginSlice';
 import { getLoginState } from '../model/loginSelector';
 import { loginByUsername } from '../model/services/loginByUsername';
 import { ReduxStoreWithManager } from 'app/providers/StoreProvider';
+import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch';
 
 interface LoginFormProps {
   className?: string;
@@ -16,7 +17,7 @@ interface LoginFormProps {
 
 const LoginForm = ({ className, onLogin }: LoginFormProps) => {
   const store = useStore() as ReduxStoreWithManager;
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     // сделать это по кнопке войти
