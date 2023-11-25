@@ -33,6 +33,9 @@ module.exports = {
     "n/handle-callback-err": "warn",
     "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-dynamic-delete": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/prefer-ts-expect-error": "off",
     semi: [2, "always"],
   },
   globals: {
