@@ -21,6 +21,9 @@ const Sidebar = ({ className }: SidebarProps) => {
       <AppLink className={styles.menu_item} theme={AppLinkTheme.LINK} to={RoutePath.about}>
         {collapsed ? '2' : 'AboutPage'}
       </AppLink>
+      <AppLink className={styles.menu_item} theme={AppLinkTheme.LINK} to={RoutePath.profile}>
+        {collapsed ? '3' : 'Профиль'}
+      </AppLink>
      </div>
       <Button className={styles.collapseBtn} size={ButtonSize.L} onClick={() => setCollapsed(!collapsed)}>
         {collapsed ? '>' : '<'}
